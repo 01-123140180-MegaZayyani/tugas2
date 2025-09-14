@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Laporkan Kehilangan - Lost and Found ITERA</title>
+</head>
+<body style="margin:0; font-family:Arial, sans-serif; background-color:#f4f4f4;">
+
+  <!-- Header -->
+    <header style="background-color:#dadfd4; padding:20px; text-align:center; color:black; position:fixed; top:0; left:0; width:100%; z-index:1000; box-sizing:border-box;">
+    <h1 style="margin:0;">Lost and Found ITERA</h1>
+
+    <img src="image/logo-itera.png" alt="Logo ITERA" style="position:absolute; top:10px; left:10px; width:100px; height:auto;">
+        <!-- Nav -->
+        <nav style="margin-top:15px;">
+            <style>
+                nav a {
+                margin: 0 15px;
+                text-decoration: none;
+                color: rgb(59, 57, 57);
+                font-weight: bold;
+                padding: 5px 10px;
+                border-radius: 5px;
+                transition: 0.3s;
+                }
+                nav a:hover {
+                color: #a9250e;
+                }
+            </style>
+        <a href="index1.html">Beranda</a>
+        <a href="#">Lapor</a>
+        <a href="index2.html">Daftar Barang</a>
+        </nav>
+    </header>
+
+  <!-- Konten utama -->
+  <main style="padding:20px; margin-top:150px;">
+
+    <h2>Formulir Laporkan Kehilangan</h2>
+    <p>Isi formulir berikut untuk melaporkan barang yang hilang. Data akan ditampilkan di halaman <strong>Daftar</strong>.</p>
+
+    <form action="hilang.html" method="get" style="background:#fff; padding:20px; border-radius:8px; max-width:600px; margin:auto;">
+      <label for="namaBarang" style="display:block; margin-top:10px;">Nama Barang:</label>
+      <input type="text" id="namaBarang" name="namaBarang" required style="width:100%; padding:8px; margin-top:5px;">
+
+      <label for="deskripsi" style="display:block; margin-top:10px;">Deskripsi Barang:</label>
+      <textarea id="deskripsi" name="deskripsi" rows="4" required style="width:100%; padding:8px; margin-top:5px;"></textarea>
+
+      <label for="lokasi" style="display:block; margin-top:10px;">Lokasi Kehilangan:</label>
+      <input type="text" id="lokasi" name="lokasi" required style="width:100%; padding:8px; margin-top:5px;">
+
+      <label for="tanggal" style="display:block; margin-top:10px;">Tanggal Kehilangan:</label>
+      <input type="date" id="tanggal" name="tanggal" required style="width:100%; padding:8px; margin-top:5px;">
+
+      <label for="kontak" style="display:block; margin-top:10px;">Kontak yang Bisa Dihubungi:</label>
+      <input type="tel" id="kontak" name="kontak" placeholder="0812-xxxx-xxxx" required style="width:100%; padding:8px; margin-top:5px;">
+
+      <button type="submit" style="margin-top:15px; padding:10px 20px; background:#4CAF50; color:white; border:none; border-radius:5px; cursor:pointer;">
+        Laporkan
+      </button>
+    </form>
+  </main>
+
+  <!-- Footer -->
+  <footer style="background-color:#a9250e; padding:15px; text-align:center; font-size:14px; color:black; margin-top:30px;">
+    &copy; 2025 Lost and Found ITERA
+  </footer>
+
+</body>
+</html>
